@@ -23,11 +23,12 @@ body {
 /* /COMMON */
 
 .bg {
-    background: url(../img/bg.png);
+    background: url(../img/bg-min.png);
     height: 768px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     color: white;
 }
 
@@ -76,6 +77,10 @@ header {
     align-items: center;
     display: flex;
     border: 1px solid #E6E6E6;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2000;
 }
 
 .nav_bar .container {
@@ -247,6 +252,11 @@ header {
     margin-right: 28px;
     padding-top: 38px;
     padding-bottom: 38px;
+    transition: 0.5s;
+}
+
+.service:hover {
+    transform: scale(1.1);
 }
 
 .ser1 {
@@ -396,6 +406,9 @@ footer {
 
 .copyright {
     background-color: #171819;
+    text-align: center;
+    color: #fff;
+    font-size: 11px;
 }
 
 .texthead {
